@@ -1,0 +1,5 @@
+// chèn mã này vô wp-config.php
+// mã này khóa update
+define( 'WP_AUTO_UPDATE_CORE', false );
+// mã này cho phép upload ftp về
+define( 'FS_METHOD', 'direct' );

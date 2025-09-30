@@ -1,0 +1,4 @@
+define( 'FORCE_SSL_LOGIN', TRUE );
+define( 'FORCE_SSL_ADMIN', TRUE );
+define( 'DISALLOW_FILE_MODS', TRUE );
+define( 'DISALLOW_FILE_EDIT', TRUE );

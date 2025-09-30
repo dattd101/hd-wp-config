@@ -1,0 +1,17 @@
+// tang cau hinh load file
+// chèn trong file wp-config.php
+set_time_limit(300);
+define (‘WP_MEMORY_LIMIT’, ‘256M’);
+define (‘WP_MAX_MEMORY_LIMIT’, ‘256M’);
+
+// hoặc chèn như dưới
+// .htaccess
+// copy vo file .htaccess sau thang </IfModule> # END WordPress
+// code này chạy được trong local
+php_value memory_limit 256M
+php_value upload_max_file 64M
+php_value upload_max_filesize 64M
+php_value post_max_size 64M
+php_value max_execution_time 3000
+php_value max_input_vars 5000
+php_value max_input_time 5000

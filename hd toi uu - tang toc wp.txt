@@ -1,0 +1,27 @@
+define( 'WP_CACHE', TRUE );
+
+define( 'WP_AUTO_UPDATE_CORE', false);
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+//Chặn check update giúp tăng tốc trang wp-admin
+
+define( 'COMPRESS_CSS', TRUE );
+define( 'COMPRESS_SCRIPTS', TRUE );
+define( 'CONCATENATE_SCRIPTS', TRUE );
+define( 'ENFORCE_GZIP', TRUE );
+//Nén, gộp CSS, JS trong wp-admin giúp file nhẹ hơn, tải nhanh hơn
+
+define( 'AUTOSAVE_INTERVAL', 30 );
+define( 'WP_POST_REVISIONS', FALSE );
+define( 'MEDIA_TRASH', FALSE );
+define( 'EMPTY_TRASH_DAYS', 15);
+
+define( 'DISABLE_WP_CRON', TRUE );
+define( 'ALTERNATE_WP_CRON', FALSE );
+define( 'WP_CRON_LOCK_TIMEOUT', 30 );
+//Chặn cron mặc định. Setup
+
+define( 'WP_HTTP_BLOCK_EXTERNAL', TRUE ); 
+//ngăn WP gọi API Bên ngoài giúp tăng tốc wp-admin
+
+define( 'WP_ACCESSIBLE_HOSTS', 'api.wordpress.org, domain.vn' );  
+// Chỉ cho phép WP gọi HTTP Request đến các domain này

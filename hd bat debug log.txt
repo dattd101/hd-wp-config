@@ -1,0 +1,12 @@
+// bật log để check bug
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true ); // Bật ghi log vào debug.log
+define( 'WP_DEBUG_DISPLAY', false ); // Không hiển thị lỗi trên giao diện
+define( 'SCRIPT_DEBUG', true ); // Bật chế độ debug script
+
+define( 'WP_DEBUG', true );
+//define('WP_DEBUG_LOG', true); // bật debug để check lỗi 
+define('WP_DEBUG_DISPLAY', false);
+define('SCRIPT_DEBUG', true);  // Tùy chọn, giúp debug các script và styles
+@ini_set('display_errors', 0); // Đảm bảo rằng lỗi không hiển thị trên trang
+define('WP_CACHE', false);

@@ -1,0 +1,11 @@
+// Ngăn WordPress tự động cập nhật phiên bản cốt lõi
+define( 'WP_AUTO_UPDATE_CORE', false );
+
+// Ngăn cập nhật các plugin và giao diện
+add_filter( 'auto_update_plugin', '__return_false' );
+add_filter( 'auto_update_theme', '__return_false' );
+
+// Ngăn kiểm tra cập nhật trong bảng quản trị
+add_filter( 'pre_site_transient_update_core', '__return_null' );
+add_filter( 'pre_site_transient_update_plugins', '__return_null' );
+add_filter( 'pre_site_transient_update_themes', '__return_null' );
